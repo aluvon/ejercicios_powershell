@@ -1,5 +1,5 @@
 ﻿Clear-Host
-Write-Host "Coloca tu renta anual y te mostraré tu tipo impositivo."
+Write-Host "Coloca tu renta anual y te mostraré el tipo impositivo que te corresponda."
 [int]$num = Read-Host "Ingresa tu renta"
 Write-Host "`n"
 switch ($num) {
