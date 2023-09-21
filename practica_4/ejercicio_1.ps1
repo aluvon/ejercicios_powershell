@@ -1,17 +1,10 @@
 ﻿Clear-Host
+Write-Host "En este script colocarás tu nombre y lo repetiré según el número que ingreses."
 $nombre = Read-Host "Ingresa tu nombre"
 [int]$numero = Read-Host "Ingresa un número entero"
-Write-Host "`n"
 [int]$a = $numero
-
-do {
+Write-Host "`n"
+while ($numero -gt 0) {
     Write-Host $nombre
-    $numero--
+    $numero = $numero - 1
 }
-while ($numero -eq 0) - and ($numero.getType())
-
-
-#for ($a = $numero; $numero %2 -eq 0; $a++)
-#{
-#     Write-Host $nombre
-#}
