@@ -12,7 +12,7 @@ Write-Host "g) Mostrar la fecha y hora actules"
 Write-Host "x) Salir"
 Write-Host "`n"
 $valores = Read-Host "Ingresa la opción deseada"
-Write-Host "`n"
+Write-Host "`n"                      #NO ESTÁ COMPLETO.
 switch ($valores) {
    A {Write-Host }
    B {Write-Host }
