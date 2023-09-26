@@ -3,7 +3,10 @@ Write-Host "Hola, te pediré un número y realizaré una cuenta regresiva del mi
 [int]$numero = Read-Host "Ingresa un numero entero y positivo"
 Write-Host "`n"
 
-for ($a = $numero; ($numero %2 -eq 0) -and ($a -ge 0); $a--)
+for ($a = $numero; $a -ge 0; $a--)
 {
-     Write-Host $a","
+     Write-Host -NoNewline $a
+     if ($a -ne 0){
+         Write-Host -NoNewline ","
+     }
 }

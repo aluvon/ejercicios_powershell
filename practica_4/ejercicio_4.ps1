@@ -1,10 +1,9 @@
 ﻿Clear-Host
-Write-Host "Hola, te mostraré la tabla de multiplicar según el número que ingreses."
-[int]$numero = Read-Host "Ingresa un numero"
+Write-Host "Hola, te pediré un número entero y positivo, luego te mostraré los números impares."
+[int]$numero = Read-Host "Ingresa un numero entero y positivo"
 Write-Host "`n"
 
-for ($a = 0; ($a -le 10); $a++)
+for ($a = 1; $a -le $numero; $a=$a+2)
 {
-     $resultado = $numero * $a
-     Write-Host $numero * $a "=" $resultado
+     Write-Host -NoNewline $a","
 }
