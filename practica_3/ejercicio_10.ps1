@@ -1,9 +1,9 @@
 ﻿Clear-Host
 Write-Host "Hola, te diré cúanto recibirás este mes dependiendo de tu puntuación"
-[int]$puntos = Read-Host "Ingresa tus puntos"
+[double]$puntos = Read-Host "Ingresa tus puntos"
 $sueldo_0 = $puntos * 0
-$sueldo_4 = $puntos * 2.400
-$sueldo_6 = $puntos * 2.400        #NO ENCUENTRO EL ERROR.
+$sueldo_4 = $puntos * 2400
+$sueldo_6 = $puntos * 2400
 Write-Host "`n"
 
 switch ($puntos) {
