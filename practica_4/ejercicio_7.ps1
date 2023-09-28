@@ -11,3 +11,17 @@ for ($a = 1; ($a -le $numero); $a++)
                   Write-Host -NoNewline "*"
          }
 }
+
+
+<#
+$fila = Read-Host "Ingresa un número"
+for ($fila = 1; ($fila -le $altura); $a++)
+{
+    Write-Host "`n"
+         for ($columna = 1; ($columna -le $fila); $columna++)
+         {
+                  Write-Host -NoNewline "*"
+         }
+         Write-Host "`n"
+}
+#>
