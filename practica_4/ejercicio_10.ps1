@@ -74,7 +74,7 @@ while ($valores -ine "x") {
 
        default {Write-Host "Opción incorrecta."}
 
-    }#cierra el switch
-}#cierra el while
+    }
+}
 Write-Host "`n"
 Write-Host "Fin del script."
