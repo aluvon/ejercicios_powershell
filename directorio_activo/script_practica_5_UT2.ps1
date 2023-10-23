@@ -29,7 +29,7 @@ foreach($x in $datos) {
         
     #permitir a cada grupo ESCRITURA
 
-    $permiso2 = $depto,'Write','ContainerInherit,ObjectInherit','None','Allow'
+    $permiso2 = $depto,'Modify','ContainerInherit,ObjectInherit','None','Allow'
     $ace2 = New-Object -TypeName System.Security.AccessControl.FileSystemAccessRule -ArgumentList $permiso2
     $acl.SetAccessRule($ace2)
 
