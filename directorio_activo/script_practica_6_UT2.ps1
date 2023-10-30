@@ -45,15 +45,15 @@ foreach($x in $datos) {
     
         #asignar la unidad z al usuario.
     if ($depto -ieq "finanzas") {
-       Set-ADUser -Identity $datos -ScriptPath "finanzas.bat" -HomeDrive "Z:" -HomeDirectory "\\Empresa-dc1\Empresa_users$\$datos"
+       Set-ADUser -Identity $datos -ScriptPath "finanzas.bat" -HomeDrive "Z:" -HomeDirectory "\\Empresa-dc1\Empresa_user$\$datos"
     }
     elseif ($depto -ieq "personal") {
-       Set-ADUser -Identity $datos -ScriptPath "personal.bat" -HomeDrive "Z:" -HomeDirectory "\\Empresa-dc1\Empresa_users$\$datos"
+       Set-ADUser -Identity $datos -ScriptPath "personal.bat" -HomeDrive "Z:" -HomeDirectory "\\Empresa-dc1\Empresa_user$\$datos"
     }
     elseif ($depto -ieq "produccion") {
-       Set-ADUser -Identity $datos -ScriptPath "produccion.bat" -HomeDrive "Z:" -HomeDirectory "\\Empresa-dc1\Empresa_users$\$datos"
+       Set-ADUser -Identity $datos -ScriptPath "produccion.bat" -HomeDrive "Z:" -HomeDirectory "\\Empresa-dc1\Empresa_user$\$datos"
     }
     elseif ($depto -ieq "ventas") {
-       Set-ADUser -Identity $datos -ScriptPath "ventas.bat" -HomeDrive "Z:" -HomeDirectory "\\Empresa-dc1\Empresa_users$\$datos"
+       Set-ADUser -Identity $datos -ScriptPath "ventas.bat" -HomeDrive "Z:" -HomeDirectory "\\Empresa-dc1\Empresa_user$\$datos"
     }
 }
